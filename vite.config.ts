@@ -14,7 +14,7 @@ export default defineConfig((configEnv) => ({
       linters: [
         new EsLinter({
           configEnv: configEnv,
-          serveOptions: { formatter: 'visualstudio' },
+          serveOptions: { cache: false, formatter: 'visualstudio' },
         }),
         new TypeScriptLinter(),
       ],
